@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ========== FAVICON ========== -->
+    <link rel="shortcut icon" href="./assets/img/favicon-32x32.png" type="image/x-icon">
+
+    <!-- ========== BOXICON ========== -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ========== SWIPER CSS ========== -->
+
+    <!-- ========== CSS ========== -->
+    <link rel="stylesheet" href="./assets/css/style1.css">
+
+    <title>Kenzo</title>
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo"> 
+                <div class="nav__logo-name"><h2>Kenzo</h2></div>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Sobre</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Serviços</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">Portfolio</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contato</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-water'></i>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- ========== MAIN ========== -->
+    <main class="main" id="main">
+
+        <!-- ========== HOME ========== -->
+        <section class="home section" id="home">
+            <br><br><br>
+            <div class="home__data">
+                    <span class="section__subtitle">Sou</span>
+                <h2 class="section__title_name">Kenzo</h2> 
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <p class="home__description">
+                            Olá! meu nome é Mateus Kenzo dos Santos tenho 19 anos <br>e sou estudante de ADS na FATEC-Campinas.
+                        </p>
+
+                        <a href="#contact" class="button btn">Contato <span>&#x27F6;</span></a>
+                    </div>
+                </div>
+            </div>
+
+                       
+        </section>           
+
+        <!-- ========== ABOUT ========== -->
+        <section class="about section" id="about">
+
+            <div class="wave">
+                <svg class="wave__top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#363640" fill-opacity="1" d="M0,160L60,154.7C120,149,240,139,360,122.7C480,107,600,85,720,80C840,75,960,85,1080,96C1200,107,1320,117,1380,122.7L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+            </div>
+
+            <span class="section__subtitle">Sobre</span>
+            <h2 class="section__title">Meu Sobre</h2>
+
+            <div class="about__container container grid">
+                <img src="./assets/img/Logo_1.png" alt="" class="about__img">
+
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class='bx bx-book-bookmark about__icon'></i>
+                            <h3 class="about__title">Estudos</h3>
+                            <span class="about__subtitle">5 anos</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-briefcase-alt about__icon'></i>
+                            <h3 class="about__title">Trabalhos</h3>
+                            <span class="about__subtitle">+35 projetos</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-award about__icon'></i>
+                            <h3 class="about__title">Futuro</h3>
+                            <span class="about__subtitle">full-stack</span>
+                        </div>
+                    </div>
+
+                    <p class="about__description">
+                        • Téc de Informática - 2ºSemestre de ADS. <br> Desenvolvedor Web (sempre estudando e praticando).
+                        <br> • Meu objetivo é ser um profissional da área de T.I e ser muito bom no que faço para entregar o melhor para o cliente e também conseguir ensinar/ajudar meus colegas de trabalho.
+                    </p>
+
+                    <a href="#contact" class="button btn">Contato <span>&#x27F6;</span></a>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- ========== SKILLS ========== -->
+        <section class="skills section" id="skills">
+
+            <div class="wave">
+                <svg class="wave__top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#A7B9C7" fill-opacity="1" d="M0,160L48,160C96,160,192,160,288,144C384,128,480,96,576,74.7C672,53,768,43,864,58.7C960,75,1056,117,1152,138.7C1248,160,1344,160,1392,160L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+            </div>
+
+            <span class="section__subtitle">Skills</span>
+            <h2 class="section__title">Experiencia</h2>
+
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        Front-End Developer
+                    </h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                           <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div class="">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__level">Medio</span>
+                                </div>
+                           </div>
+
+                           <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div class="">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__level">Medio</span>
+                                </div>
+                           </div>
+
+                           <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div class="">
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__level">Basico</span>
+                                </div>
+                           </div>
+                        </div>
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                 <i class='bx bxs-badge-check'></i>
+                                 <div class="">
+                                     <h3 class="skills__name">React</h3>
+                                     <span class="skills__level">Basico</span>
+                                 </div>
+                            </div>
+ 
+                            <div class="skills__data">
+                                 <i class='bx bxs-badge-check'></i>
+                                 <div class="">
+                                     <h3 class="skills__name">GitHub</h3>
+                                     <span class="skills__level">Basico</span>
+                                 </div>
+                            </div>
+ 
+                         </div>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        Back-End Developer
+                    </h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                           <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div class="">
+                                    <h3 class="skills__name">C/C++</h3>
+                                    <span class="skills__level">Medio</span>
+                                </div>
+                           </div>
+
+                           <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div class="">
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__level">Medio</span>
+                                </div>
+                           </div>
+
+                           <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div class="">
+                                    <h3 class="skills__name">Java</h3>
+                                    <span class="skills__level">Basico</span>
+                                </div>
+                           </div>
+                        </div>
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                 <i class='bx bxs-badge-check'></i>
+                                 <div class="">
+                                     <h3 class="skills__name">MySQL</h3>
+                                     <span class="skills__level">Basico</span>
+                                 </div>
+                            </div>
+ 
+ 
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SERVICES ========== -->
+        <section class="services section" id="services">
+            <span class="section__subtitle">Serviços</span>
+            <h2 class="section__title">Oque eu faço</h2>
+
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <h3 class="services__title">Web</h3>
+
+                    <span class="second__btn">Veja Mais <span>&#x27F6;</span></span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <h3 class="services__modal-title">Web</h3>
+                            <p class="services__modal-description">
+                                Criação, codificação, integração com sistemas, ferramentas, armazenamento de banco de dados com o objetivo de estruturar cada detalhe de uma página da internet
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon' ></i>
+                                    <p class="services__modal-info">
+                                        Construção total.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon' ></i>
+                                    <p class="services__modal-info">
+                                        Desenvolvimento contínuo.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon' ></i>
+                                    <p class="services__modal-info">
+                                        Experiência agradável para o usuário.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Code</h3>
+
+                    <span class="second__btn ">Veja Mais <span>&#x27F6;</span></span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <h3 class="services__modal-title">Code</h3>
+                            <p class="services__modal-description">
+                                Desenvolvemento de diferentes tipos de códigos para criar novas funcionalidades e utilidades.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon' ></i>
+                                    <p class="services__modal-info">
+                                        Criação de pequenos códigos.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon' ></i>
+                                    <p class="services__modal-info">
+                                        Desenvolvimento rápido.
+                                    </p>
+                                </li>
+                                <!-- <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon' ></i>
+                                    <p class="services__modal-info">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Design</h3>
+
+                    <span class="second__btn">Veja Mais <span>&#x27F6;</span></span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <h3 class="services__modal-title">Design</h3>
+                            <p class="services__modal-description">
+                                Guiar os usuários pela plataforma de modo agradável para alcançar o objetivo final fazendo-o voltar novamente
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon' ></i>
+                                    <p class="services__modal-info">
+                                        Criação de ambientes agradáveis.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon' ></i>
+                                    <p class="services__modal-info">
+                                        Preocupação com o usuário.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon' ></i>
+                                    <p class="services__modal-info">
+                                        Intuitivo e direto.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ========== PORTFOLIO ========== -->
+        <section class="work section" id="work">
+
+            <div class="wave">
+                <svg class="wave__top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#363640" fill-opacity="1" d="M0,32L80,42.7C160,53,320,75,480,74.7C640,75,800,53,960,53.3C1120,53,1280,75,1360,85.3L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+            </div> 
+
+            <span class="section__subtitle">Portfolio</span>
+            <h2 class="section__title">Trabalhos Recentes</h2>
+
+            <div class="work__filters" id="work__id">
+                <span class="work__item active-work" data-filter=".all">Todos</span>
+                <span class="work__item" data-filter=".empresa">Empresas</span>
+                <span class="work__item" data-filter=".web">Web</span>
+                <span class="work__item" data-filter=".pessoal">Pessoal</span>
+            </div>
+
+            <div class="work__container container grid">
+                <div class="work__card  pessoal all">
+                    <img src="./assets/img/Fatec.png" class="work__img" alt="">
+                    <h3 class="work__title">FATEC</h3>
+                    <a href="https://fatec.vercel.app/" target="_blank" class="work__button btn">Entrar <span>&#x27F6;</span></a>
+                </div>
+
+                <div class="work__card  pessoal all">
+                    <img src="./assets/img/KenzoPor.png" class="work__img" alt="">
+                    <h3 class="work__title">PORTFOLIO</h3>
+                    <a href="https://portfolio-kenzo.vercel.app/" target="_blank" class="work__button btn">Entrar <span>&#x27F6;</span></a>
+                </div>
+
+                <div class="work__card  empresa all">
+                    <img src="./assets/img/xypo.png" class="work__img" alt="">
+                    <h3 class="work__title">XYPO</h3>
+                    <a href="https://studying-p49t1i812-kenzosant.vercel.app/" target="_blank" class="work__button btn">Entrar <span>&#x27F6;</span></a>
+                </div>
+
+                <div class="work__card  web all">
+                    <img src="./assets/img/alur.png" class="work__img" alt="">
+                    <h3 class="work__title">CHAT</h3>
+                    <a href="https://aluracord-samuraijack.vercel.app/" target="_blank" class="work__button btn">Entrar <span>&#x27F6;</span></a>
+                </div>
+
+                <div class="work__card  empresa all">
+                    <img src="./assets/img/home.png" class="work__img" alt="">
+                    <h3 class="work__title">HOMED</h3>
+                    <a href="https://homed.vercel.app/" target="_blank" class="work__button btn">Entrar <span>&#x27F6;</span></a>
+                </div>
+
+                <div class="work__card  empresa all">
+                    <img src="./assets/img/resta.png" class="work__img" alt="">
+                    <h3 class="work__title">RESTAURANTE</h3>
+                    <a href="https://restaurant-kohl.vercel.app/" target="_blank" class="work__button btn">Entrar <span>&#x27F6;</span></a>
+                </div>
+            </div>
+        </section> 
+
+
+        <!-- ========== CONTACT ========== -->
+        <section class="contact section" id="contact">
+
+            <div class="wave">
+                <svg class="wave__top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#A7B9C7" fill-opacity="1" d="M0,128L80,112C160,96,320,64,480,69.3C640,75,800,117,960,138.7C1120,160,1280,160,1360,160L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+            </div>
+            
+            <span class="section__subtitle">Contato</span>
+            <h2 class="section__title">Entre em Contato</h2>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title">Fale Comigo</h3>
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class='bx bx-mail-send contact__card-icon'></i>
+                            <h3 class="conatct__card-title">Email</h3>
+                            <span class="contact__card-data">mateus_kenzosantos@hotmail.com</span>
+
+                            <a href="mailto:mateus_kenzosantos@hotmail.com" target="_blank" class="second__btn">Entar em Contato <span>&#x27F6;</span></a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-whatsapp contact__card-icon'></i>
+                            <h3 class="conatct__card-title">Whatsaap</h3>
+                            <span class="contact__card-data">(19)98345-0816</span>
+
+                            <a href="https://api.whatsapp.com/send?phone=19983450816&text=Olá" target="_blank" class="second__btn">Entar em Contato <span>&#x27F6;</span></a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-discord-alt contact__card-icon' ></i>
+                            <h3 class="conatct__card-title">Discord</h3>
+                            <span class="contact__card-data">Exploradores da Natureza</span>
+
+                            <a href="https://discord.gg/MP6zq7XDgA" target="_blank" class="second__btn">Entar em Contato <span>&#x27F6;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        Envie uma Mensagem
+                    </h3>
+
+                    <form action="https://formspree.io/f/mvonogya" method="POST" class="contact__form">
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">
+                                Nome:
+                            </label>
+                            <input placeholder="Nome" class="contact__form-input" type="text" name="nome">
+                        </div>  
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">
+                                Email:
+                            </label>
+                            <input placeholder="Email" class="contact__form-input" type="email" name="email">
+                        </div>
+                        <div class="contact__form-div contact__form-area">
+                            <label class="contact__form-tag">
+                                Mensagem:
+                            </label>
+                            <textarea placeholder="Mensagem" cols="30" rows="10"  class="contact__form-input" name="message"></textarea>
+                        </div> 
+                        <button target="_blank" class="btn" type="submit">Enviar <span>&#x27F6;</span></button>      
+                    </form>
+                   
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" id="footer">
+
+        <div class="footer__container container">
+            <h1 class="footer__title">Kenzo</h1>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="#about" class="footer__link">Sobre</a>
+                </li>
+                <li>
+                    <a href="#work" class="footer__link">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <a href="" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-github' ></i>
+                </a>
+                <a href="" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-linkedin-square' ></i>
+                </a>
+            </ul>
+
+        </div>
+
+        <span class="footer__copy">Copyright (c) 2023 <span>M.Kenzo</span>. All Rights Reserved</span>
+    </footer>
+
+    <!-- ========== SCROLLREVEAL ========== -->
+    <script src="./assets/js/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./assets/js/mixitup.min.js"></script>
+
+    <!-- ========== JS ========== -->
+    <script src="./assets/js/main1.js"></script>
+
+</body>
+</html>
