@@ -1,6 +1,8 @@
 /* ========== GOOGLE FONT ========== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+
+
 :root{
 
     --header-height:3.5rem;
@@ -23,6 +25,7 @@
     --grey-color-dark: #77767B;
 
     /* ========== FONT ========== */
+    --kami-font: 'kamikaze-font', sans-serif;
     --body-font: 'Poppins', sans-serif;
     --biggest-font-size: 2rem;
     --h1-font-size: 1.75rem;
@@ -107,6 +110,8 @@ img{
 
 header.sticky{
     box-shadow: 0 2px 5px hsla(0,0%,4%, .3);
+    background: var(--background-color);
+    transition: .4s;
 }
 
 /* ========== CLASSES REUTILIZAVEIS ========== */
@@ -199,11 +204,13 @@ header.sticky{
 .wave__bottom{
     position: absolute;
     bottom: -3px;
+    z-index: 1;
 }
 
 .wave__top{
     position: absolute;
     top: -3px;
+    z-index: 1;
 }
 
 /*CHANGE BACKGROUND HEADER*/
@@ -214,11 +221,12 @@ header.sticky{
 /* ========== HEADER ========== */
 .header{
     width: 100%;
-    background: var(--background-color); 
+    background: transparent ;
     position: fixed;
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
+    transition: .4s;
 }
 .nav{
     height: var(--header-height);
@@ -326,6 +334,7 @@ ul li a:hover::after{
     display: block;
     justify-content: center;
     align-items: center;
+    background: url('../img/back2.png');
     background-attachment: fixed;
     background-size: cover;
     color: var(--primary-color);
@@ -352,6 +361,9 @@ ul li a:hover::after{
     position: relative;
 }
 
+.home__data{
+    z-index: 2;
+}
 .about__img{
     width: 250px;
     border-radius: 1.5rem;
