@@ -7,4 +7,4 @@
 - Interface de usuário agradável.
 ##
 
-![Captura de Tela (1)](https://github.com/user-attachments/assets/45844fa6-9467-4ecb-97a0-629e31406f64)
+![Captura de Tela (2)](https://github.com/user-attachments/assets/52fcfc5f-354b-4367-96cf-fb96f1ffba7b)
