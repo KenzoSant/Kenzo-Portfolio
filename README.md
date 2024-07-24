@@ -6,4 +6,5 @@
 - Responsivo.
 - Interface de usuário agradável.
 ##
-![Captura de Tela (130)](https://user-images.githubusercontent.com/83035443/214398155-3e910f7a-aa7c-4b69-95e0-7b413140c7a6.png)
+
+![Captura de Tela (1)](https://github.com/user-attachments/assets/45844fa6-9467-4ecb-97a0-629e31406f64)
