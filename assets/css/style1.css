@@ -934,7 +934,6 @@ ul li a:hover::after{
 
     .work__container{
         gap: 3rem;
-        grid-template-columns: repeat(2, max-content);
     }
 
     .work__card{
