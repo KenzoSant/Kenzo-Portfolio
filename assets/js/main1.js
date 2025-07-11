@@ -1,139 +1,89 @@
-/*=============== CHANGE BACKGROUND HEADER ===============*//*
-const scrollHeader = () =>{
-    const header = document.getElementById('header')
-    // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
-    this.scrollY >= 50 ? header.classList.add('scroll-header') 
-                       : header.classList.remove('scroll-header')
-}
-window.addEventListener('scroll', scrollHeader)*/
-
-/*=============== SERVICES MODAL ===============*/
-const modalViews = document.querySelectorAll('.services__modal'),
-      modalBtn = document.querySelectorAll('.second__btn'),
-      modalClose = document.querySelectorAll('.services__modal-close')
-
-let modal = function(modalClick){
-    modalViews[modalClick].classList.add('active-modal')
-}
-
-modalBtn.forEach((mb,i) =>{
-    mb.addEventListener('click',() =>{
-        modal(i)
-    })
-})
-
-modalClose.forEach((mc) =>{
-    mc.addEventListener('click',() =>{
-        modalViews.forEach((mv) =>{
-            mv.classList.remove('active-modal')
-        })
-    })
-})
-
-/*=============== FILTER ===============*/
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("work__card");
-  if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (i = 0; i < x.length; i++) {
-    RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
-  }
-}
-
-// Show filtered elements
-function AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
-    }
-  }
-}
-
-// Hide elements that are not selected
-
-function RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-// Add active class to the current control button (highlight it)
-var btnContainer = document.getElementById("work__id");
-var btns = btnContainer.getElementsByClassName("work__item");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active-work");
-    current[0].className = current[0].className.replace(" active-work", "");
-    this.className += " active-work";
-  });
-}
-
-let mixerPort = mixitup('.work__container', {
-  selectors: {
-      target: '.work__card'
-  },
-  animation: {
-      duration: 300
-  }
-});
-
-/*=============== FILTER ===============
-const sr = ScrollReveal({
-  origin: 'top',
-  distance:'60px',
-  duration:2300,
-  delay:400,
-  //reset: true
-})
-
-sr.reveal(`.home__data`)
-sr.reveal(`.skills__container`,{delay:100})
-
-*/
-
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
+      navClose = document.getElementById('nav-close');
 
-/*===== MENU SHOW =====*/
 if(navToggle){
     navToggle.addEventListener('click', () =>{
-        navMenu.classList.add('show-menu')
-    })
+        navMenu.classList.add('show-menu');
+    });
 }
 
-/*===== MENU HIDDEN =====*/
 if(navClose){
     navClose.addEventListener('click', () =>{
-        navMenu.classList.remove('show-menu')
-    })
+        navMenu.classList.remove('show-menu');
+    });
 }
 
-/*=============== REMOVE MENU MOBILE ===============*/
-const navLink = document.querySelectorAll('.nav__link')
+const navLink = document.querySelectorAll('.nav__link');
+navLink.forEach(n => n.addEventListener('click', () => {
+    navMenu.classList.remove('show-menu');
+}));
 
-function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    navMenu.classList.remove('show-menu')
+/*=============== STICKY HEADER ===============*/
+window.addEventListener('scroll', () => {
+    const header = document.getElementById('header');
+    header.classList.toggle('sticky', window.scrollY > 0);
+});
+
+/*=============== SERVICES MODAL ===============*/
+const modalViews = document.querySelectorAll('.services__modal'),
+      modalBtns = document.querySelectorAll('.second__btn'),
+      modalCloses = document.querySelectorAll('.services__modal-close');
+
+let openModal = (modalIndex) => {
+    modalViews[modalIndex].classList.add('active-modal');
+};
+
+modalBtns.forEach((btn, i) => {
+    btn.addEventListener('click', () => {
+        openModal(i);
+    });
+});
+
+modalCloses.forEach((close) => {
+    close.addEventListener('click', () => {
+        modalViews.forEach(view => view.classList.remove('active-modal'));
+    });
+});
+
+/*=============== PORTFOLIO FILTER ===============*/
+let mixer = mixitup('.work__container', {
+    selectors: {
+        target: '.work__card'
+    },
+    animation: {
+        duration: 300
+    }
+});
+
+const workItems = document.querySelectorAll('.work__item');
+
+workItems.forEach(item => {
+    item.addEventListener('click', () => {
+        workItems.forEach(i => i.classList.remove('active-work'));
+        item.classList.add('active-work');
+    });
+});
+
+/*=============== SCROLL REVEAL ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2000,
+    delay: 200
+});
+
+sr.reveal(` .section__subtitle, .section__title`, {origin: 'left'});
+sr.reveal(` .about__img`, {origin: 'right'});
+sr.reveal(`.about__data, .skills__container, .services__container, .work__container, .contact__container`, {origin: 'bottom'});
+
+/*=============== SCROLL UP BUTTON ===============*/
+function scrollUp(){
+    const scrollUp = document.getElementById('scroll-up');
+    if(scrollUp){
+        window.scrollY >= 560 ? scrollUp.classList.add('show-scroll') : scrollUp.classList.remove('show-scroll');
+    }
 }
-navLink.forEach(n => n.addEventListener('click', linkAction))
+window.addEventListener('scroll', scrollUp);
 
-/*=============== SHOW HEADER ===============*/
-window.addEventListener('scroll', function(){
-  const header = document.querySelector('header');
-  header.classList.toggle("sticky", window.scrollY > 0);
-
-})

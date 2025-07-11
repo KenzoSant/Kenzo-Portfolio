@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,13 +19,16 @@
 
     <title>Kenzo</title>
 </head>
+
 <body>
 
     <!-- ========== HEADER ========== -->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#home" class="nav__logo"> 
-                <div class="nav__logo-name"><h2>Kenzo</h2></div>
+            <a href="#home" class="nav__logo">
+                <div class="nav__logo-name">
+                    <h2>Kenzo</h2>
+                </div>
             </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -72,41 +76,26 @@
     <main class="main" id="main">
 
         <!-- ========== HOME ========== -->
-        <section class="home section" id="home">
-            <br><br><br>
-            <div class="home__data">
-                    <span class="section__subtitle">Bem Vindo! Eu Sou</span>
-                <h2 class="section__title_name">Kenzo</h2> 
-
-                <div class="home__container container grid">
-                    <div class="home__data">
-                        <p class="home__description">
-                            Olá! meu nome é Mateus Kenzo dos Santos<br>e sou estudante de Análise e Desenvolvimento de Sistemas na FATEC-Campinas.
-                        </p>
-
-                        <a href="#contact" class="button btn">Contato <span>&#x27F6;</span></a>
-                    </div>
-                </div>
-            </div>           
-
-            <div class="wave">
-                <svg class="wave__bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#A7B9C7" fill-opacity="1" d="M0,224L80,229.3C160,235,320,245,480,256C640,267,800,277,960,272C1120,267,1280,245,1360,234.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
-            </div> 
-                       
-        </section>           
+        <section class="home section con" id="home">
+            <!-- Coluna 1 (Texto e Botão) -->
+            <div class="home__data container">
+                    <h2 class="section__title_name">MEU PORTFOLIO</h2>
+                    <span class="section__subtitle">Sejam bem vindos e fiquem a vontade para ver alguns dos meus
+                        projetos desenvolvidos</span>
+                    <a href="#work" class="button btn">Contato <span>&#x27F6;</span></a>
+            </div>
+        </section>
+        </section>
 
         <!-- ========== ABOUT ========== -->
         <section class="about section" id="about">
 
-            <!-- <div class="wave">
-                <svg class="wave__top " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#363640" fill-opacity="1" d="M0,160L60,154.7C120,149,240,139,360,122.7C480,107,600,85,720,80C840,75,960,85,1080,96C1200,107,1320,117,1380,122.7L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
-            </div> -->
 
             <span class="section__subtitle">Sobre</span>
             <h2 class="section__title">Meu Sobre</h2>
 
             <div class="about__container container grid">
-                <img src="./assets/img/Logo_1.png" alt="" class="about__img">
+                <img class="about__img" src="./assets/img/Logo_1.png" alt="" >
 
                 <div class="about__data">
                     <div class="about__info">
@@ -128,22 +117,20 @@
                     </div>
 
                     <p class="about__description">
-                        • Formado como Técnico de Informática e atualmente cursando 6º Semestre de Análise e Desenvolvimento de Sistemas.
-                        <br> • Meu objetivo é ser um profissional da área de T.I e ser muito bom no que faço para entregar o melhor para o cliente e também conseguir ensinar/ajudar meus colegas de trabalho.
+                        • Formado em Técnico de Informática e em Análise e
+                        Desenvolvimento de Sistemas.
+                        <br> • Meus objetivos são, ser um exelente profissional da área de T.I, 
+                        entregar o melhor para o cliente e também conseguir ensinar/ajudar meus colegas de trabalho.
                     </p>
 
                     <a href="#contact" class="button btn">Contato <span>&#x27F6;</span></a>
                 </div>
             </div>
-            
+
         </section>
 
         <!-- ========== SKILLS ========== -->
         <section class="skills section" id="skills">
-
-            <div class="wave">
-                <svg class="wave__top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#A7B9C7" fill-opacity="1" d="M0,160L48,160C96,160,192,160,288,144C384,128,480,96,576,74.7C672,53,768,43,864,58.7C960,75,1056,117,1152,138.7C1248,160,1344,160,1392,160L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-            </div>
 
             <span class="section__subtitle">Skills</span>
             <h2 class="section__title">Experiencia</h2>
@@ -156,49 +143,49 @@
 
                     <div class="skills__box">
                         <div class="skills__group">
-                           <div class="skills__data">
+                            <div class="skills__data">
                                 <i class='bx bxs-badge-check'></i>
                                 <div class="">
                                     <h3 class="skills__name">HTML</h3>
-                                    <span class="skills__level">Medio</span>
+                                    <span class="skills__level">Médio</span>
                                 </div>
-                           </div>
+                            </div>
 
-                           <div class="skills__data">
+                            <div class="skills__data">
                                 <i class='bx bxs-badge-check'></i>
                                 <div class="">
                                     <h3 class="skills__name">CSS</h3>
-                                    <span class="skills__level">Medio</span>
+                                    <span class="skills__level">Médio</span>
                                 </div>
-                           </div>
+                            </div>
 
-                           <div class="skills__data">
+                            <div class="skills__data">
                                 <i class='bx bxs-badge-check'></i>
                                 <div class="">
                                     <h3 class="skills__name">JavaScript</h3>
-                                    <span class="skills__level">Medio</span>
+                                    <span class="skills__level">Médio</span>
                                 </div>
-                           </div>
+                            </div>
                         </div>
 
                         <div class="skills__group">
                             <div class="skills__data">
-                                 <i class='bx bxs-badge-check'></i>
-                                 <div class="">
-                                     <h3 class="skills__name">React</h3>
-                                     <span class="skills__level">Medio</span>
-                                 </div>
+                                <i class='bx bxs-badge-check'></i>
+                                <div class="">
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__level">Médio</span>
+                                </div>
                             </div>
- 
+
                             <div class="skills__data">
-                                 <i class='bx bxs-badge-check'></i>
-                                 <div class="">
-                                     <h3 class="skills__name">GitHub</h3>
-                                     <span class="skills__level">Basico</span>
-                                 </div>
+                                <i class='bx bxs-badge-check'></i>
+                                <div class="">
+                                    <h3 class="skills__name">GitHub</h3>
+                                    <span class="skills__level">Médio</span>
+                                </div>
                             </div>
- 
-                         </div>
+
+                        </div>
                     </div>
                 </div>
 
@@ -209,42 +196,42 @@
 
                     <div class="skills__box">
                         <div class="skills__group">
-                           <div class="skills__data">
+                            <div class="skills__data">
                                 <i class='bx bxs-badge-check'></i>
                                 <div class="">
                                     <h3 class="skills__name">C/C++</h3>
-                                    <span class="skills__level">Medio</span>
+                                    <span class="skills__level">Médio</span>
                                 </div>
-                           </div>
+                            </div>
 
-                           <div class="skills__data">
+                            <div class="skills__data">
                                 <i class='bx bxs-badge-check'></i>
                                 <div class="">
                                     <h3 class="skills__name">Python</h3>
-                                    <span class="skills__level">Medio</span>
+                                    <span class="skills__level">Médio</span>
                                 </div>
-                           </div>
+                            </div>
 
-                           <div class="skills__data">
+                            <div class="skills__data">
                                 <i class='bx bxs-badge-check'></i>
                                 <div class="">
                                     <h3 class="skills__name">Java</h3>
-                                    <span class="skills__level">Basico</span>
+                                    <span class="skills__level">Básico</span>
                                 </div>
-                           </div>
+                            </div>
                         </div>
 
                         <div class="skills__group">
                             <div class="skills__data">
-                                 <i class='bx bxs-badge-check'></i>
-                                 <div class="">
-                                     <h3 class="skills__name">SQL</h3>
-                                     <span class="skills__level">Basico</span>
-                                 </div>
+                                <i class='bx bxs-badge-check'></i>
+                                <div class="">
+                                    <h3 class="skills__name">SQL</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
                             </div>
- 
- 
-                         </div>
+
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -266,24 +253,25 @@
                             <i class='bx bx-x services__modal-close'></i>
                             <h3 class="services__modal-title">Web</h3>
                             <p class="services__modal-description">
-                                Criação, codificação, integração com sistemas, ferramentas, armazenamento de banco de dados com o objetivo de estruturar cada detalhe de uma página da internet
+                                Criação, codificação, integração com sistemas, ferramentas, armazenamento de banco de
+                                dados com o objetivo de estruturar cada detalhe de uma página da internet
                             </p>
 
                             <ul class="services__modal-list">
                                 <li class="services__modal-item">
-                                    <i class='bx bx-check services__modal-icon' ></i>
+                                    <i class='bx bx-check services__modal-icon'></i>
                                     <p class="services__modal-info">
                                         Construção total.
                                     </p>
                                 </li>
                                 <li class="services__modal-item">
-                                    <i class='bx bx-check services__modal-icon' ></i>
+                                    <i class='bx bx-check services__modal-icon'></i>
                                     <p class="services__modal-info">
                                         Desenvolvimento contínuo.
                                     </p>
                                 </li>
                                 <li class="services__modal-item">
-                                    <i class='bx bx-check services__modal-icon' ></i>
+                                    <i class='bx bx-check services__modal-icon'></i>
                                     <p class="services__modal-info">
                                         Experiência agradável para o usuário.
                                     </p>
@@ -303,28 +291,23 @@
                             <i class='bx bx-x services__modal-close'></i>
                             <h3 class="services__modal-title">Code</h3>
                             <p class="services__modal-description">
-                                Desenvolvemento de diferentes tipos de códigos para criar novas funcionalidades e utilidades.
+                                Desenvolvemento de diferentes tipos de códigos para criar novas funcionalidades e
+                                utilidades.
                             </p>
 
                             <ul class="services__modal-list">
                                 <li class="services__modal-item">
-                                    <i class='bx bx-check services__modal-icon' ></i>
+                                    <i class='bx bx-check services__modal-icon'></i>
                                     <p class="services__modal-info">
-                                        Criação de pequenos códigos.
+                                        Criação de códigos diversos.
                                     </p>
                                 </li>
                                 <li class="services__modal-item">
-                                    <i class='bx bx-check services__modal-icon' ></i>
+                                    <i class='bx bx-check services__modal-icon'></i>
                                     <p class="services__modal-info">
-                                        Desenvolvimento rápido.
+                                        Desenvolvimento sólido.
                                     </p>
                                 </li>
-                                <!-- <li class="services__modal-item">
-                                    <i class='bx bx-check services__modal-icon' ></i>
-                                    <p class="services__modal-info">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    </p>
-                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -340,24 +323,25 @@
                             <i class='bx bx-x services__modal-close'></i>
                             <h3 class="services__modal-title">Design</h3>
                             <p class="services__modal-description">
-                                Guiar os usuários pela plataforma de modo agradável para alcançar o objetivo final fazendo-o voltar novamente
+                                Guiar os usuários pela plataforma de modo agradável para alcançar o objetivo final
+                                fazendo-o voltar novamente
                             </p>
 
                             <ul class="services__modal-list">
                                 <li class="services__modal-item">
-                                    <i class='bx bx-check services__modal-icon' ></i>
+                                    <i class='bx bx-check services__modal-icon'></i>
                                     <p class="services__modal-info">
                                         Criação de ambientes agradáveis.
                                     </p>
                                 </li>
                                 <li class="services__modal-item">
-                                    <i class='bx bx-check services__modal-icon' ></i>
+                                    <i class='bx bx-check services__modal-icon'></i>
                                     <p class="services__modal-info">
                                         Preocupação com o usuário.
                                     </p>
                                 </li>
                                 <li class="services__modal-item">
-                                    <i class='bx bx-check services__modal-icon' ></i>
+                                    <i class='bx bx-check services__modal-icon'></i>
                                     <p class="services__modal-info">
                                         Intuitivo e direto.
                                     </p>
@@ -373,10 +357,6 @@
         <!-- ========== PORTFOLIO ========== -->
         <section class="work section" id="work">
 
-            <div class="wave">
-                <svg class="wave__top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#363640" fill-opacity="1" d="M0,32L80,42.7C160,53,320,75,480,74.7C640,75,800,53,960,53.3C1120,53,1280,75,1360,85.3L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
-            </div> 
-
             <span class="section__subtitle">Portfolio</span>
             <h2 class="section__title">Trabalhos Recentes</h2>
 
@@ -391,68 +371,73 @@
                 <div class="work__card  pessoal all">
                     <img src="./assets/img/Fatec.png" class="work__img" alt="">
                     <h3 class="work__title">FATEC</h3>
-                    <a href="https://fatec.vercel.app/" target="_blank" class="work__button btn">Entrar <span>&#x27F6;</span></a>
+                    <a href="https://fatec.vercel.app/" target="_blank" class="work__button btn">Entrar
+                        <span>&#x27F6;</span></a>
                 </div>
 
                 <div class="work__card  pessoal all">
                     <img src="./assets/img/Tokashi.png" class="work__img" alt="">
                     <h3 class="work__title">TOKASHI</h3>
-                    <a href="https://tgii-food-front.onrender.com/" target="_blank" class="work__button btn">Entrar <span>&#x27F6;</span></a>
+                    <a href="https://tgii-food-front.onrender.com/" target="_blank" class="work__button btn">Entrar
+                        <span>&#x27F6;</span></a>
                 </div>
 
                 <div class="work__card  pessoal all">
                     <img src="./assets/img/KenzoPor.png" class="work__img" alt="">
                     <h3 class="work__title">PORTFOLIO</h3>
-                    <a href="https://portfolio-kenzo.vercel.app/" target="_blank" class="work__button btn">Entrar <span>&#x27F6;</span></a>
+                    <a href="https://portfolio-kenzo.vercel.app/" target="_blank" class="work__button btn">Entrar
+                        <span>&#x27F6;</span></a>
                 </div>
 
                 <div class="work__card  empresa all">
                     <img src="./assets/img/xypo.png" class="work__img" alt="">
                     <h3 class="work__title">XYPO</h3>
-                    <a href="https://studying-p49t1i812-kenzosant.vercel.app/" target="_blank" class="work__button btn">Entrar <span>&#x27F6;</span></a>
+                    <a href="https://studying-p49t1i812-kenzosant.vercel.app/" target="_blank"
+                        class="work__button btn">Entrar <span>&#x27F6;</span></a>
                 </div>
 
                 <div class="work__card  jogo all">
                     <img src="./assets/img/Velha.png" class="work__img" alt="">
                     <h3 class="work__title">VELHA</h3>
-                    <a href="https://jogo-da-velha-kenzosant.vercel.app/" target="_blank" class="work__button btn">Entrar <span>&#x27F6;</span></a>
+                    <a href="https://jogo-da-velha-kenzosant.vercel.app/" target="_blank"
+                        class="work__button btn">Entrar <span>&#x27F6;</span></a>
                 </div>
 
                 <div class="work__card  empresa all">
                     <img src="./assets/img/home.png" class="work__img" alt="">
                     <h3 class="work__title">HOMED</h3>
-                    <a href="https://homed.vercel.app/" target="_blank" class="work__button btn">Entrar <span>&#x27F6;</span></a>
+                    <a href="https://homed.vercel.app/" target="_blank" class="work__button btn">Entrar
+                        <span>&#x27F6;</span></a>
                 </div>
 
                 <div class="work__card  empresa all">
                     <img src="./assets/img/resta.png" class="work__img" alt="">
                     <h3 class="work__title">RESTAURANTE</h3>
-                    <a href="https://restaurant-kohl.vercel.app/" target="_blank" class="work__button btn">Entrar <span>&#x27F6;</span></a>
+                    <a href="https://restaurant-kohl.vercel.app/" target="_blank" class="work__button btn">Entrar
+                        <span>&#x27F6;</span></a>
                 </div>
 
                 <div class="work__card  empresa all">
                     <img src="./assets/img/natal.png" class="work__img" alt="">
                     <h3 class="work__title">NATALINA</h3>
-                    <a href="https://natalina.vercel.app/" target="_blank" class="work__button btn">Entrar <span>&#x27F6;</span></a>
+                    <a href="https://natalina.vercel.app/" target="_blank" class="work__button btn">Entrar
+                        <span>&#x27F6;</span></a>
                 </div>
 
                 <div class="work__card  empresa all">
                     <img src="./assets/img/Bakery.png" class="work__img" alt="">
                     <h3 class="work__title">BAKERY</h3>
-                    <a href="https://bakery-ochre.vercel.app/" target="_blank" class="work__button btn">Entrar <span>&#x27F6;</span></a>
+                    <a href="https://bakery-ochre.vercel.app/" target="_blank" class="work__button btn">Entrar
+                        <span>&#x27F6;</span></a>
                 </div>
 
             </div>
-        </section> 
+        </section>
 
 
         <!-- ========== CONTACT ========== -->
         <section class="contact section" id="contact">
 
-            <div class="wave">
-                <svg class="wave__top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#A7B9C7" fill-opacity="1" d="M0,128L80,112C160,96,320,64,480,69.3C640,75,800,117,960,138.7C1120,160,1280,160,1360,160L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
-            </div>
-            
             <span class="section__subtitle">Contato</span>
             <h2 class="section__title">Entre em Contato</h2>
 
@@ -465,7 +450,8 @@
                             <h3 class="conatct__card-title">Email</h3>
                             <span class="contact__card-data">mateuskenzo_santos@hotmail.com</span>
 
-                            <a href="mailto:mateuskenzo_santos@hotmail.com" target="_blank" class="second__btn">Entrar em Contato <span>&#x27F6;</span></a>
+                            <a href="mailto:mateuskenzo_santos@hotmail.com" target="_blank" class="second__btn">Entrar
+                                em Contato <span>&#x27F6;</span></a>
                         </div>
 
                         <div class="contact__card">
@@ -473,7 +459,8 @@
                             <h3 class="conatct__card-title">Whatsaap</h3>
                             <span class="contact__card-data">(19)98345-0816</span>
 
-                            <a href="https://api.whatsapp.com/send?phone=19983450816&text=Olá" target="_blank" class="second__btn">Entrar em Contato <span>&#x27F6;</span></a>
+                            <a href="https://api.whatsapp.com/send?phone=19983450816&text=Olá" target="_blank"
+                                class="second__btn">Entrar em Contato <span>&#x27F6;</span></a>
                         </div>
 
                         <!-- <div class="contact__card">
@@ -497,7 +484,7 @@
                                 Nome:
                             </label>
                             <input placeholder="Nome" class="contact__form-input" type="text" name="nome">
-                        </div>  
+                        </div>
                         <div class="contact__form-div">
                             <label class="contact__form-tag">
                                 Email:
@@ -508,11 +495,12 @@
                             <label class="contact__form-tag">
                                 Mensagem:
                             </label>
-                            <textarea placeholder="Mensagem" cols="30" rows="10"  class="contact__form-input" name="message"></textarea>
-                        </div> 
-                        <button target="_blank" class="btn" type="submit">Enviar <span>&#x27F6;</span></button>      
+                            <textarea placeholder="Mensagem" cols="30" rows="10" class="contact__form-input"
+                                name="message"></textarea>
+                        </div>
+                        <button target="_blank" class="button btn" type="submit">Enviar <span>&#x27F6;</span></button>
                     </form>
-                   
+
                 </div>
             </div>
         </section>
@@ -540,18 +528,19 @@
                 </li>
                 <li>
                     <a href="#contact" class="footer__link">Contato</a>
-                </li>                
+                </li>
             </ul>
 
             <ul class="footer__social">
-                <a href="https://instagram.com/kenzo_mateus?igshid=ZDc4ODBmNjlmNQ==" target="_blank" class="footer__social-link">
+                <a href="https://instagram.com/kenzo_mateus?igshid=ZDc4ODBmNjlmNQ==" target="_blank"
+                    class="footer__social-link">
                     <i class='bx bxl-instagram'></i>
                 </a>
                 <a href="https://github.com/KenzoSant" target="_blank" class="footer__social-link">
-                    <i class='bx bxl-github' ></i>
+                    <i class='bx bxl-github'></i>
                 </a>
                 <a href="https://www.linkedin.com/in/mateuskenzo/" target="_blank" class="footer__social-link">
-                    <i class='bx bxl-linkedin-square' ></i>
+                    <i class='bx bxl-linkedin-square'></i>
                 </a>
             </ul>
 
@@ -559,6 +548,11 @@
 
         <span class="footer__copy">Copyright (c) 2023 <span>M.Kenzo</span>. All Rights Reserved</span>
     </footer>
+
+    <!-- ========== SCROLL UP ========== -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-chevron-up'></i>
+    </a>
 
     <!-- ========== SCROLLREVEAL ========== -->
     <script src="./assets/js/scrollreveal.min.js"></script>
@@ -569,4 +563,5 @@
     <script src="./assets/js/main1.js"></script>
 
 </body>
+
 </html>
