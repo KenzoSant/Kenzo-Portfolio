@@ -1,4 +1,4 @@
-# :ocean: Kenzo-Portfolio (New Portfolio)
+# :ocean: Kenzo-Portfolio (Novo Portfolio)
 
 ##  Kenzo-Portfolio  
 - 2º Portfolio.
