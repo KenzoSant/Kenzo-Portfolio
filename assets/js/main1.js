@@ -87,3 +87,26 @@ function scrollUp(){
 }
 window.addEventListener('scroll', scrollUp);
 
+document.addEventListener('DOMContentLoaded', function() {
+    const skillsSection = document.querySelector('.skills');
+    const secondSkill = document.querySelector('.skills__content:last-child');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Calcula a porcentagem de visibilidade da seção
+                const scrollPercentage = (window.scrollY - skillsSection.offsetTop) / 
+                                       (skillsSection.offsetHeight - window.innerHeight);
+                
+                // Ativa o segundo card quando 50% da seção estiver visível
+                if (scrollPercentage > 0.5) {
+                    secondSkill.classList.add('active');
+                } else {
+                    secondSkill.classList.remove('active');
+                }
+            }
+        });
+    }, {threshold: 0.1});
+    
+    observer.observe(skillsSection);
+});
